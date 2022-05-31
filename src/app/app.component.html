@@ -3,9 +3,9 @@
 <div class="container">
   <h1>HamsterBook</h1>
   <p>Hier findest du die schönsten Hamster der Welt</p>
-  <app-hamster-card [img]="hamsterImages[0]" [text]="'Hallo, mein Name ist Frederick! Ich bin hier, um neue Haster-Freunde kennenzulernen.'"></app-hamster-card>
-  <app-hamster-card [img]="hamsterImages[0]" text="Hallo, mein Name ist Hamsti! Ich bin hier, um mich über neueste HamsterApps auszutauschen."></app-hamster-card>
-  <app-hamster-card [img]="hamsterImages[0]" [text]="postText[0]"></app-hamster-card>
+
+  <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
+
 </div>
 
 
