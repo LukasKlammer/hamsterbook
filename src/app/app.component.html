@@ -1,10 +1,12 @@
 <app-header></app-header>
 
-<div class="container">
-  <h1>HamsterBook</h1>
-  <p>Hier findest du die schönsten Hamster der Welt</p>
 
-  <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
+<div class="main-container">
+  <div class="posts-container">
+    <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
+  </div>
+  
+  <app-proposals></app-proposals>
 
 </div>
 

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   postText = [
-    'Hallo, mein Name ist Frederick! Ich bin hier, um neue Haster-Freunde kennenzulernen.', 
+    'Hallo, mein Name ist Frederick! Ich bin hier, um neue Hamster-Freunde kennenzulernen.', 
     'Hallo, mein Name ist Hamsti! Ich bin hier, um mich über neueste HamsterApps auszutauschen.', 
     'Hi Leute! Ich bin neu hier und freue mich über eure Likes.', 
     'Top Seite! Freue mich, dabei zu sein!', 

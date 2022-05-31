@@ -1,0 +1,25 @@
+.profile-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+
+    img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: center;
+        border: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.name-and-info {
+    display: flex;
+    flex-direction: column;
+    
+    span {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+    }
+}
