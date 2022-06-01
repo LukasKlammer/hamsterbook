@@ -6,7 +6,7 @@
     <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
   </div>
   
-  <app-proposals></app-proposals>
+  <app-proposals [hamsterImages]="hamsterImages"></app-proposals>
 
 </div>
 
