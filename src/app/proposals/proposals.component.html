@@ -1,7 +1,9 @@
-<app-profile-row [isOwner]="true" [img]="hamsterImages[0]" [name]="hamsterNames[0]" [description]="hamsterDescriptions[0]"></app-profile-row>
-
-<div class="margin-bottom-16">
-    <b>Freundschaftsvorschläge</b>
+<div class="proposals">
+    <app-profile-row [isOwner]="true" [img]="hamsterImages[0]" [name]="hamsterNames[0]"
+        [description]="hamsterDescriptions[0]"></app-profile-row>
+    <div class="margin-bottom-16">
+        <b>Freundschaftsvorschläge</b>
+    </div>
+    <app-profile-row *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]" [img]="hamsterImages[i]" [name]="hamsterNames[i]"
+        [description]="hamsterDescriptions[i]"></app-profile-row>
 </div>
-
-<app-profile-row *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]" [img]="hamsterImages[i]" [name]="hamsterNames[i]" [description]="hamsterDescriptions[i]"></app-profile-row>
