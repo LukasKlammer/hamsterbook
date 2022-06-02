@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HamsterCardComponent } from './hamster-card/hamster-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
+import { FriendBoxComponent } from './friend-box/friend-box.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProfileRowComponent } from './profile-row/profile-row.component';
     FooterComponent,
     HamsterCardComponent,
     ProposalsComponent,
-    ProfileRowComponent
+    ProfileRowComponent,
+    FriendBoxComponent
   ],
   imports: [
     BrowserModule,
