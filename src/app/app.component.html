@@ -3,10 +3,10 @@
 
 <div class="main-container">
   <div class="posts-container">
-    <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
+    <app-hamster-card *ngFor="let i of [0, 1, 2, 3, 4]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
   </div>
   
-  <app-proposals [hamsterImages]="hamsterImages"></app-proposals>
+  <app-proposals [hamsterImages]="hamsterImages" [hamsterNames]="hamsterNames" [hamsterDescriptions]="hamsterDescriptions"></app-proposals>
 
 </div>
 

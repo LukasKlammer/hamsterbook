@@ -1,5 +1,7 @@
-<app-profile-row></app-profile-row>
+<app-profile-row [img]="hamsterImages[0]" [name]="hamsterNames[0]" [description]="hamsterDescriptions[0]"></app-profile-row>
 
-<b>Freundesvorschläge</b>
+<div class="margin-bottom-16">
+    <b>Freundschaftsvorschläge</b>
+</div>
 
-<app-profile-row *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]" [img]="hamsterImages[i]"></app-profile-row>
+<app-profile-row *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]" [img]="hamsterImages[i]" [name]="hamsterNames[i]" [description]="hamsterDescriptions[i]"></app-profile-row>

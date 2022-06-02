@@ -8,9 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProposalsComponent implements OnInit {
 
   @Input() hamsterImages:any = [];
-
-  names = ['Marius', 'Franziska'];
-  texts = ['Hallo Welt', 'Hallo Welt 2'];
+  @Input() hamsterNames:any = [];
+  @Input() hamsterDescriptions:any = [];
 
   constructor() { }
 

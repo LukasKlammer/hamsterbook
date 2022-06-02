@@ -26,6 +26,28 @@ export class AppComponent {
     'assets/img/hamster/hamster_8.jpg',
   ];
 
+  hamsterDescriptions = [
+    '3 Jahre alt',
+    'Hamstert gerne Kekse',
+    'Nett anzusehen',
+    'Feiner Max',
+    'Wuschelig anzufassen',
+    'Flauschig wie ein Fell',
+    'Nagt sehr gerne',
+    'Der schnellste Läufer',
+  ];
+
+  hamsterNames = [
+    'Frederick',
+    'Hamsti',
+    'Nicy',
+    'Max',
+    'Wuschel',
+    'Flauschi',
+    'Nagi',
+    'Runny',
+  ];
+
   buyHamster() {
     alert('Hamster bestellt!');
   }
