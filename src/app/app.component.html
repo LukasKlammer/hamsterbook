@@ -3,7 +3,7 @@
 
 <div class="main-container">
   <div class="posts-container">
-    <app-friend-box [hamsterImages]="hamsterImages" [hamsterNames]="hamsterNames"></app-friend-box>
+    <app-friend-box></app-friend-box>
     <app-hamster-card *ngFor="let i of [0, 1, 2, 3, 4]" [img]="hamsterImages[i]" [text]="postText[i]"></app-hamster-card>
   </div>
   

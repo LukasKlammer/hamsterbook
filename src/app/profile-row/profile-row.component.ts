@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-profile-row',
@@ -11,7 +12,7 @@ export class ProfileRowComponent implements OnInit {
   @Input() img = 'assets/img/hamster/hamster_1.jpg';
   @Input() description = '3 Jahre alt';
 
-  constructor() { }
+  constructor(public fs: FriendService) { }
 
   ngOnInit(): void {
   }

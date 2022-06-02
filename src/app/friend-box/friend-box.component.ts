@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-friend-box',
@@ -7,10 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FriendBoxComponent implements OnInit {
 
-  @Input() hamsterImages:any = [];
-  @Input() hamsterNames:any = [];
-
-  constructor() { }
+  constructor(public fs: FriendService) { }
 
   ngOnInit(): void {
   }

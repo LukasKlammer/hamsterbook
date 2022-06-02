@@ -1,6 +1,6 @@
 <div class="standard-card friend-row padding-16">
-    <div class="friend" *ngFor="let i of [1, 2, 3, 4, 5, 6, 7]">
-        <img src="{{ hamsterImages[i] }}" alt="Bild">
-        <div>{{ hamsterNames[i] }}</div>
+    <div class="friend" *ngFor="let name of fs.hamsterNames; let i = index">
+        <img src="{{ fs.hamsterImages[i] }}" alt="Bild">
+        <div>{{ name }}</div>
     </div>
 </div>
