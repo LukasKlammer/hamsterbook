@@ -1,4 +1,7 @@
 <div class="standard-card friend-row padding-16">
+    <div *ngIf="fs.hamsterNames.length === 0">
+        Füge neue Freunde aus den Freundschaftsvorschlägen hinzu. 🐹😊
+    </div>
     <div class="friend" *ngFor="let name of fs.hamsterNames; let i = index">
         <img src="{{ fs.hamsterImages[i] }}" alt="Bild">
         <div>{{ name }}</div>

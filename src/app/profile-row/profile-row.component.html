@@ -1,8 +1,8 @@
-<div class="profile-row margin-bottom-16">
+<div *ngIf="canFollow" class="profile-row margin-bottom-16">
     <img src=" {{ img }}" alt="">
     <div class="name-and-description">
         <b>{{ name }}</b>
         <span>{{ description }}</span>
     </div>
-    <a (click)="fs.addFriend(name, description, img)">Folgen</a>
+    <a *ngIf="!isOwner" (click)="fs.addFriend(name, description, img); canFollow = false">Folgen</a>
 </div>
